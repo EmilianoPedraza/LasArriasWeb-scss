@@ -1,0 +1,63 @@
+//Fuente de parrafos y otros-------------------------------------------------------------------------------------
+//Light 300
+//Light 300 Italic
+//Medium 500
+//Medium 500 Italic
+//SemiBold 600
+//SemiBold 600 Italic
+//font-family: 'Montserrat', sans-serif;
+
+//Fuente de titulos----------------------------------------------------------------------------------------------
+//Medium 500
+//SemiBold 600
+//Bold 700
+//font-family: 'Poppins', sans-serif;
+
+//color de botones bootstrap------------------
+$colorbottom: #ffff00;
+
+//--------------------------------------------
+a{
+    text-decoration: none;
+    font-family: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+}
+[type="button"] {
+  background-color: $colorbottom;
+}
+$f-tittles: (
+  medio: 500,
+  sembold: 600,
+  bold: 700,
+);
+$f-otros: (
+  light: 300,
+  medium: 500,
+  sembold: 600
+);
+@mixin fonts($font) {
+  @if $font==tittles {
+    font-family: "Poppins", sans-serif;
+  } 
+  @else {
+    font-family: "Montserrat", sans-serif;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-image: url("../assets/images/bg-body.jpg");
+  background-size: cover;
+  box-shadow: inset 0 0 200px 40px black;
+}
+h1,
+h2,
+h3 {
+  @include fonts(tittles);
+}
+@import "_header";
+@import "_main";
+@import "_footer";
