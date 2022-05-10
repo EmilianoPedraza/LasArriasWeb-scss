@@ -1,0 +1,24 @@
+
+@media screen and (min-width:769px){
+    .footer{
+        @include flex(row, center, center)
+    }
+    .footer__h3{
+        width: 40%;
+    }
+    .footer__redes{
+        width: 60%;
+        .enlace{
+            width: 50%;
+        }
+    }
+}
+@media screen and (max-width: 769px){
+    .mainIndex{
+        display: block;
+        .welcome__us{
+            width: 100%;
+        }
+    }
+
+}

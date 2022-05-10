@@ -1,3 +1,26 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  background-image: url("../assets/images/bg-body.jpg");
+  background-size: cover;
+  box-shadow: inset 0 0 200px 40px black;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto 0.2fr;
+  grid-template-areas: "header" "main" "footer"; }
+
+.header {
+  grid-area: "header"; }
+
+.main {
+  grid-area: "main"; }
+
+.footer {
+  grid-area: "header"; }
+
 a {
   text-decoration: none;
   font-family: inherit;
@@ -7,19 +30,13 @@ a {
 [type="button"] {
   background-color: #ffff00; }
 
-* {
-  padding: 0;
-  margin: 0; }
-
-body {
-  background-image: url("../assets/images/bg-body.jpg");
-  background-size: cover;
-  box-shadow: inset 0 0 200px 40px black; }
-
 h1,
 h2,
 h3 {
   font-family: "Poppins", sans-serif; }
+
+.enlace__span {
+  font-family: "Montserrat", sans-serif; }
 
 header {
   background-color: #00000077; }
@@ -50,3 +67,74 @@ header {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   color: #bed306; }
+
+.nav-li-a:hover {
+  transition: all 0.3s;
+  color: #ece8e8;
+  border-bottom: solid #fafafaa8 1.5px; }
+
+.main {
+  margin-left: 1em;
+  margin-right: 1em; }
+
+.mainIndex {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1em; }
+
+.welcome__h2 {
+  color: aliceblue; }
+
+.welcome__p {
+  padding: 1em;
+  color: aliceblue;
+  border-radius: 2em;
+  border-style: solid;
+  border-width: 0.1em;
+  background-color: #000000bb;
+  border-color: yellow; }
+  .welcome__p strong {
+    color: yellow; }
+
+.footer {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background-color: #00000077; }
+  .footer .footer__redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; }
+  .footer .footer__h3 {
+    text-align: center;
+    color: #fff; }
+
+.enlace {
+  font-family: "Montserrat", sans-serif; }
+  .enlace .enlace__img {
+    width: 2em;
+    background-color: #ffff00;
+    box-shadow: 0 0 0.1em 0.1em #cea903, inset 0 0 1em 0.4em #cea903; }
+  .enlace .enlace__span {
+    color: #e2e203; }
+
+@media screen and (min-width: 769px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+  .footer__h3 {
+    width: 40%; }
+  .footer__redes {
+    width: 60%; }
+    .footer__redes .enlace {
+      width: 50%; } }
+
+@media screen and (max-width: 769px) {
+  .mainIndex {
+    display: block; }
+    .mainIndex .welcome__us {
+      width: 100%; } }

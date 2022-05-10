@@ -1,0 +1,29 @@
+$bg-image-footer: #ffff00;
+$foter-colortext-yellow: #e2e203;
+$footer-colortext-white: #fff;
+.footer{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: $bg-header-footer;
+    .footer__redes{
+        @include flex(row, space-between, center);
+        flex-wrap: wrap;
+    }
+    .footer__h3{
+        text-align: center;
+        font-size: map-get($f-tittles, medium);
+        color: $footer-colortext-white;
+    }
+}
+
+.enlace{
+    @include fonts(otro);
+    .enlace__img{
+        width: 2em;
+        background-color: $bg-image-footer;
+        box-shadow: 0 0 0.1em 0.1em #cea903, inset 0 0 1em 0.4em #cea903;
+    }
+    .enlace__span{
+        color: $foter-colortext-yellow;
+    }
+}

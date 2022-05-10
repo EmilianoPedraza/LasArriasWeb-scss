@@ -1,0 +1,30 @@
+$margin-laterales-main: 1em;
+$texto-bienvenida: aliceblue;
+.main{
+    margin-left: $margin-laterales-main;
+    margin-right: $margin-laterales-main;
+
+}
+.mainIndex{
+    @include grid(1fr, 1fr 1fr);
+    gap: 1em;
+}
+
+.welcome__h2{
+    color: $texto-bienvenida;
+}
+.welcome__p{
+    padding: 1em;
+    color: $texto-bienvenida;
+    border-radius: 2em;
+    border-style: solid;
+    border-width: 0.1em;
+    background-color: #000000bb;
+    border-color: yellow;
+    strong{
+        color: yellow;
+    }
+}
+
+
+

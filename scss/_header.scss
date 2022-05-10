@@ -1,13 +1,12 @@
 
 $bordr-color-h1: #b0fc00;
 $bg-color-h1: #133f2b;
-$bg-header: #00000077;
 $ancho-h1: fit-content;
 $nav-tittle-color: #ffffff;
 $items-navbar:  #bed306;
 //tamaño de boton
 header{
-    background-color:$bg-header;
+    background-color:$bg-header-footer;
     .h1{
         font-weight: map-get($f-tittles, bold);
         width: $ancho-h1;
@@ -29,15 +28,19 @@ header{
     display: block;
     color: $nav-tittle-color
 }
+//modificaciones navbar-------------------------------
 .nav__tittle{
     color: $nav-tittle-color
 }
-//modificaciones navbar-------------------------------
+//items:colores y fuentes
 .nav-li-a{
     @include fonts(otros);
     font-weight: map-get($f-otros, light);
     color: $items-navbar;
 }
-//items:colores y fuentes
-
+.nav-li-a:hover {
+    transition: all 0.3s;
+    color: #ece8e8;
+    border-bottom: solid #fafafaa8 1.5px;
+  }
 
