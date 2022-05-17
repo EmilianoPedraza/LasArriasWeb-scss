@@ -17,7 +17,6 @@ $footer-colortext-white: #fff;
 }
 
 .enlace{
-    @include fonts(otro);
     .enlace__img{
         width: 2em;
         background-color: $bg-image-footer;
