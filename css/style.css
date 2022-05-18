@@ -178,6 +178,43 @@ header {
   .fieldset__correo label, .fieldset__pasword label {
     width: 40%; }
 
+.form__button {
+  display: block;
+  margin: 0 auto 0 auto;
+  border-radius: 2em;
+  padding: 0 1em; }
+
+form {
+  position: relative;
+  bottom: 2.2em;
+  margin-bottom: 1em; }
+  form .--carousel {
+    width: 90%;
+    margin: 0 auto 0 auto; }
+    form .--carousel .fieldset__div {
+      margin-bottom: 1em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+    form .--carousel .form__button {
+      background-color: yellow; }
+
+.--opiniones select {
+  border-style: none;
+  background-color: yellow;
+  border-radius: 1em; }
+  .--opiniones select option {
+    background-color: #000000e7; }
+
+.--comentarios textarea {
+  background-color: #1d1d1d;
+  width: 100%;
+  resize: none; }
+
+.--botonDisabled {
+  display: none; }
+
 .footer {
   padding-top: 1em;
   padding-bottom: 1em;

@@ -7,6 +7,8 @@ $bg-mult-text: #0c0c0ce1;
 $carousel-border-p-buttom: #ffff009c;
 $text-color-h2-user: #ffffff;
 $text-color-inputs-form: #ffffff;
+$option-color: #000000e7;
+$select-color: yellow;
 .main {
   margin-left: $margin-laterales-main;
   margin-right: $margin-laterales-main;
@@ -115,4 +117,53 @@ $text-color-inputs-form: #ffffff;
   label{
     width: 40%;
   }
+}
+//modificación de parrafo de proyecto;margenes
+//proyectos-carousel-formulario-----------------------------------------------------------------------------------------------------------------
+//boton de formularios no visible
+.form__button{
+  display: block;
+  margin: 0 auto 0 auto;
+  border-radius: 2em;
+  padding: 0 1em;
+}
+form{
+  position: relative;
+  bottom: 2.2em;
+  margin-bottom: 1em;
+  .--carousel{
+    width: 90%;
+    margin: 0 auto 0 auto;
+    .fieldset__div{
+      margin-bottom: 1em;
+      @include flex(column, center,center);
+    }
+    .form__button{
+      background-color: $select-color;
+      
+    }
+  }
+}
+.--opiniones{
+  select{
+    border-style: none;
+    background-color: $select-color;
+    border-radius: 1em;
+    option{
+      background-color: $option-color;
+    }
+  }
+}
+.--comentarios{
+  textarea {
+    background-color: #1d1d1d;
+    width: 100%;
+    resize: none;
+  }
+}
+
+
+//para el formulario de cuenta desactivo el boton
+.--botonDisabled{
+  display: none;
 }
