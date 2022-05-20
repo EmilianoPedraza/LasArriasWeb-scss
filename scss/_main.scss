@@ -1,6 +1,7 @@
 $margin-laterales-main: 2em;
 $margin-buttom-top:2em;
 $texto-bienvenida: aliceblue;
+$bg-acordeon: #111111;
 $color-p-novedad: aliceblue;
 $index__p__strong: #818100;
 $bg-mult-text: #0c0c0ce1;
@@ -9,6 +10,8 @@ $text-color-h2-user: #ffffff;
 $text-color-inputs-form: #ffffff;
 $option-color: #000000e7;
 $select-color: yellow;
+$bg-textarea-novedad: #1d1d1d;
+$color-textarea: #c8ff00;
 .main {
   margin-left: $margin-laterales-main;
   margin-right: $margin-laterales-main;
@@ -38,7 +41,10 @@ $select-color: yellow;
     color: yellow;
   }
 }
-
+.accordion-body{
+  background-color:$bg-acordeon;
+  color: $texto-bienvenida
+}
 //transparencia de background de contenedores de buttons next y prev de carousel
 .carousel-control-prev,
 .carousel-control-next {
@@ -55,7 +61,7 @@ $select-color: yellow;
     border-color: yellow;
   }
 }
-.novedad {
+.novedad , .proyecto{
   //background y estilo de articulo carousel de novedad.html
   @include style-mult-text;
   //imagen de novedad.html carousel:
@@ -144,6 +150,7 @@ form{
     }
   }
 }
+
 .--opiniones{
   select{
     border-style: none;
@@ -156,7 +163,8 @@ form{
 }
 .--comentarios{
   textarea {
-    background-color: #1d1d1d;
+    color: $color-textarea;
+    background-color: $bg-textarea-novedad;
     width: 100%;
     resize: none;
   }

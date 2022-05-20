@@ -30,108 +30,107 @@
     <!--barra de navegación-->
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <h2 class="nav__tittle">Inicio</h2>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav">
-                  <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#"></a>
-                  </li>
-                  <li class="nav-item">
-                      <a href="./index.html" class="nav-li-a">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                      <a href="./user.html" class="nav-li-a">Cuenta</a>
-                  </li>
-                  <li class="nav-item">
-                      <a href="./novedades.html" class="nav-li-a">Novedades</a>
-                  </li>
-              </ul>
-          </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <h2 class="nav__tittle">Inicio</h2>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"></a>
+            </li>
+            <li class="nav-item">
+              <a href="./index.html" class="nav-li-a">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a href="./user.html" class="nav-li-a">Cuenta</a>
+            </li>
+            <li class="nav-item">
+              <a href="./novedades.html" class="nav-li-a">Novedades</a>
+            </li>
+            <li class="nav-item">
+              <a href="./contacto.html" class="nav-li-a">Contacto</a>
+            </li>
+          </ul>
+        </div>
       </div>
-  </nav>
-</header>
+    </nav>
+  </header>
   <main class="main">
-    <section class="main__section">
-      <div id="carouselExampleIndicators" class="carousel carousel-light slide" data-bs-ride="carousel" data-bs-interval="false">
-          <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                  class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                  aria-label="Slide 2"></button>
-          </div>
-          <div class="carousel-inner">
-              <div class="carousel-item active">
-                  <div class="novedad d-block w-100">
-                      <img src="./assets/images/proyecto1.jpg" class="img-fluid"
-                          alt="recolección de residuos">
-                      <p class="carusel__p --parrafoProyect">
-                        Continuamos con la obra de mejora del sistema de desagüe pluvial de nuestra
-                        localidad. 
-                        En este momento estamos trabajando en el alcantarillado, construcción de badenes y 
-                        cordón cuneta en
-                        la intersección de Bv. Manuel Belgrano y la calle Intendente G. Cejas
-                      </p>
-                      <form>
-                        <fieldset class="fieldset --carousel">
-                            <div class="fieldset__div --opiniones">
-                                <select name="opiiones" id="opiniones">
-                                    <option value="disgustado">😒 No me gusta</option>
-                                    <option value="coforme">😶 Podria mejorar</option>
-                                    <option value="me-gusta" selected>😊 Me gusta</option>
-                                </select>
-                            </div>
-                            <div class="fieldset__div --comentarios">
-                                <textarea name="Description" id="Descripcion" cols="30" rows="2" minlength="80" maxlength="200" placeholder="Puedes realizar un comentario anonimo si lo deseas"
-                                ></textarea> 
-                            </div>
-                              <button class="form__button">Enviar</button>
-                        </fieldset>
-                    </form>
-                  </div>
-              </div>
-              <div class="novedad carousel-item">
-                  <img src="./assets/images/proyecto2.jpg" class="img-fluid"
-                      alt="recolección de residuos">
-                      <form>
-                          <fieldset>
-                              <div class="fieldset__div --opiniones">
-                                  <label for="opiniones">Que opinas de nuestro trabajo?</label>
-                                  <select name="opiiones" id="opiniones">
-                                      <option value="disgustado">😒 No me gusta</option>
-                                      <option value="coforme">😶 Podria mejorar</option>
-                                      <option value="me-gusta">😊 Me gusta</option>
-                                  </select>
-                              </div>
-                              <div class="fieldset__div --comentarios">
-                                  <label for="comentario">Puedes realizar un comentario anonimo</label>
-                                  <input id="comentario">
-                              </div>
-                                <button class="form__button"></button>
-                          </fieldset>
-                      </form>
-                  <p class="carusel__p --nobord">
-                    Nuestro escenario avanza, está magnífica obra va tomando forma, una estructura de gran dimensión se puso en pie para armar las columnas, que sostendrán dicho escenario .
-                  </p>
-              </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-          </button>
+    <div id="carouselExampleIndicators" class="carousel carousel-light slide" data-bs-ride="carousel"
+      data-bs-interval="false">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
       </div>
-  </>
-  </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="proyecto d-block w-100">
+            <img src="./assets/images/proyecto1.jpg" class="img-fluid" alt="recolección de residuos">
+            <p class="carusel__p --parrafoProyect">
+              Continuamos con la obra de mejora del sistema de desagüe pluvial de nuestra
+              localidad.
+              En este momento estamos trabajando en el alcantarillado, construcción de badenes y
+              cordón cuneta en
+              la intersección de Bv. Manuel Belgrano y la calle Intendente G. Cejas
+            </p>
+            <form>
+              <fieldset class="fieldset --carousel">
+                <div class="fieldset__div --opiniones">
+                  <select name="opiiones" id="opiniones">
+                    <option value="disgustado">😒 No me gusta</option>
+                    <option value="coforme">😶 Podria mejorar</option>
+                    <option value="me-gusta" selected>😊 Me gusta</option>
+                  </select>
+                </div>
+                <div class="fieldset__div --comentarios">
+                  <textarea name="cometario" id="Descripcion" cols="30" rows="2" minlength="80" maxlength="200"
+                    placeholder="Puedes realizar un comentario anonimo si lo deseas"></textarea>
+                </div>
+                <button class="form__button">Enviar</button>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+        <div class="proyecto carousel-item">
+          <img src="./assets/images/proyecto2.jpg" class="img-fluid" alt="recolección de residuos">
+          <p class="carusel__p --parrafoProyect">
+            Nuestro escenario avanza, está magnífica obra va tomando forma, una estructura de gran dimensión se puso en
+            pie para armar las columnas, que sostendrán dicho escenario .
+          </p>
+          <form>
+            <fieldset class="fieldset --carousel">
+              <div class="fieldset__div --opiniones">
+                <select name="opiiones" id="opiniones">
+                  <option value="disgustado">😒 No me gusta</option>
+                  <option value="coforme">😶 Podria mejorar</option>
+                  <option value="me-gusta" selected>😊 Me gusta</option>
+                </select>
+              </div>
+              <div class="fieldset__div --comentarios">
+                <textarea name="cometario" id="Descripcion" cols="30" rows="2" minlength="80" maxlength="200"
+                  placeholder="Puedes realizar un comentario anonimo si lo deseas"></textarea>
+              </div>
+              <button class="form__button">Enviar</button>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    </div>
 
   </main>
   <footer class="footer">

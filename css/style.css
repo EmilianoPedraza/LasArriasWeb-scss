@@ -101,6 +101,10 @@ header {
   .welcome__p strong {
     color: yellow; }
 
+.accordion-body {
+  background-color: #111111;
+  color: aliceblue; }
+
 .carousel-control-prev,
 .carousel-control-next {
   background-color: rgba(0, 0, 0, 0); }
@@ -114,20 +118,20 @@ header {
     border-width: 0.2em;
     border-color: yellow; }
 
-.novedad {
+.novedad, .proyecto {
   border-radius: 2em;
   border-style: solid;
   border-width: 0.1em;
   background-color: #000000d0;
   border-color: #818100; }
-  .novedad img {
+  .novedad img, .proyecto img {
     border-radius: 1em;
     display: inline-block;
     width: 77%;
     margin: 2em 0 0.5em 0;
     margin-left: 11.5%;
     margin-right: 11.5%; }
-  .novedad .carusel__p {
+  .novedad .carusel__p, .proyecto .carusel__p {
     border-bottom: solid #ffff009c;
     border-top: solid #ffff009c;
     border-width: 0.1em;
@@ -208,6 +212,7 @@ form {
     background-color: #000000e7; }
 
 .--comentarios textarea {
+  color: #c8ff00;
   background-color: #1d1d1d;
   width: 100%;
   resize: none; }
