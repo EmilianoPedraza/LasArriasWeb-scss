@@ -59,8 +59,66 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main class="mainContact main">
+        <section class="caja --Contacto">
+            <p>
+                Destinamos la seccion de contacto para que puedas contactarte con nosotros y realizar tus consultas de
+                manera más simple, lo puedes hacer contactandonos desde tu telefono mediante whatsapp, SMS o
+                llamanda.<br>
+                Número de telefono:<span>3522-4108527</span>.<br>
+                <span>Tambíen recuerda que nos puedes contactar mediante nuestras redes que están más abajo</span>
+            </p>
+        </section>
 
+        <div class="caja --contenImage">
+            <img src="./assets/images/contacto.jpg" alt="escudo del pueblo" class="--imagen">
+        </div>
+
+        <section class="section --contactoForm --notStyleType">
+
+            <ul class="ul">
+                <li class="ul__li">
+                    <a href="#" class="enlace --enlaceFont">Realizar consulta</a>
+
+                    <ul class="--notStyleType --ul">
+                        <li class="--li">
+                            <form class="--formContact --formConsulta">
+                                <fieldset>
+                                    <textarea name="consulta" id="consulta" cols="30" rows="2" minlength="80"
+                                        maxlength="200" placeholder="Escribe cualquier duda que tengas aquí"
+                                        class="consultaForm">
+                                    </textarea>
+                                </fieldset>
+                                <button class="form__button">Enviar</button>
+                            </form>
+                        </li>
+                    </ul>
+
+                </li>
+
+                <li class="ul__li">
+                    <a href="#" class="enlace --enlaceFont">Sacar Turno</a>
+
+                    <ul class="--notStyleType --ul">
+                        <li class="--li">
+                            <form class="--formContact --formHorario">
+                                <fieldset>
+                                    <label for="fecha">Fecha</label>
+                                    <input type="date" name="fecha" id="fecha">
+                                </fieldset>
+                                <fieldset>
+                                    <label for="horario">Hora</label>
+                                    <input type="time" name="horario" id="horario">
+                                </fieldset>
+                                <button class="form__button">Enviar</button>
+                            </form>
+                        </li>
+                    </ul>
+
+                </li>
+
+            </ul>
+        </section>
     </main>
     <footer class="footer">
         <h3 class="footer__h3">Seguinos en</h3>
@@ -77,8 +135,8 @@
     </footer>
     <!--bootstrap js-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>

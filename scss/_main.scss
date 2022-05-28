@@ -1,5 +1,7 @@
+//main-general-variables-->margenes;
 $margin-laterales-main: 2em;
-$margin-buttom-top:2em;
+$margin-buttom-top: 2em;
+
 $texto-bienvenida: aliceblue;
 $bg-acordeon: #111111;
 $color-p-novedad: aliceblue;
@@ -12,6 +14,9 @@ $option-color: #000000e7;
 $select-color: yellow;
 $bg-textarea-novedad: #1d1d1d;
 $color-textarea: #c8ff00;
+$color-barForm-text: yellow;
+//usuario-form-colorInputs;
+$color-inputUser: #818181;
 .main {
   margin-left: $margin-laterales-main;
   margin-right: $margin-laterales-main;
@@ -22,12 +27,12 @@ $color-textarea: #c8ff00;
   @include grid(1fr, 1fr 1fr);
   gap: 1em;
 }
-@mixin style-mult-text{
-    border-radius: 2em;
-    border-style: solid;
-    border-width: 0.1em;
-    background-color: #000000d0;
-    border-color: $index__p__strong;
+@mixin style-mult-text {
+  border-radius: 2em;
+  border-style: solid;
+  border-width: 0.1em;
+  background-color: #000000d0;
+  border-color: $index__p__strong;
 }
 .welcome__h2 {
   color: $texto-bienvenida;
@@ -36,32 +41,33 @@ $color-textarea: #c8ff00;
   @include style-mult-text;
   padding: 1em;
   color: $texto-bienvenida;
-  
+
   strong {
     color: yellow;
   }
 }
-.accordion-body{
-  background-color:$bg-acordeon;
-  color: $texto-bienvenida
+.accordion-body {
+  background-color: $bg-acordeon;
+  color: $texto-bienvenida;
 }
 //transparencia de background de contenedores de buttons next y prev de carousel
 .carousel-control-prev,
 .carousel-control-next {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #00000000;
 }
 //color de background de button next y prev de carousel
 [data-bs-target="#carouselExampleIndicators"] {
-    width: 10%;
+  width: 10%;
   span {
-    background-color: rgb(0, 0, 0);
+    background-color: #000000;
     border-radius: 50%;
     border-style: solid;
     border-width: 0.2em;
     border-color: yellow;
   }
 }
-.novedad , .proyecto{
+.novedad,
+.proyecto {
   //background y estilo de articulo carousel de novedad.html
   @include style-mult-text;
   //imagen de novedad.html carousel:
@@ -69,7 +75,7 @@ $color-textarea: #c8ff00;
     border-radius: 1em;
     display: inline-block;
     width: 77%;
-    margin:2em 0 0.5em 0;
+    margin: 2em 0 0.5em 0;
     margin-left: 11.5%;
     margin-right: 11.5%;
   }
@@ -88,21 +94,19 @@ $color-textarea: #c8ff00;
   }
 }
 
-
-
-.main__h2Form{
+.main__h2Form {
   color: $text-color-h2-user;
-  text-align: center; 
-  margin: 0
+  text-align: center;
+  margin: 0;
 }
-.form{
+.form {
   @include style-mult-text;
   width: 60%;
   margin: 5% auto 5% auto;
-  .fieldset{
+  .fieldset {
     @include grid(1fr 1fr 1fr, 1fr);
     gap: 1em;
-    .legend{
+    .legend {
       border-top-right-radius: 1.3em;
       border-top-left-radius: 1.3em;
       text-align: center;
@@ -110,58 +114,58 @@ $color-textarea: #c8ff00;
     }
   }
 }
-.fieldset__correo, .fieldset__pasword{
+.fieldset__correo,
+.fieldset__pasword {
   @include flex(row, space-between, center);
   margin: 0 2em 1em 2em;
-  color:$text-color-inputs-form;
+  color: $text-color-inputs-form;
   font-weight: map-get($f-otros, light);
-  input{
+  input {
     border-radius: 0.5em;
     width: 60%;
-    background-color: #818181;
+    background-color: $color-inputUser;
   }
-  label{
+  label {
     width: 40%;
   }
 }
 //modificación de parrafo de proyecto;margenes
 //proyectos-carousel-formulario-----------------------------------------------------------------------------------------------------------------
 //boton de formularios no visible
-.form__button{
+.form__button {
   display: block;
   margin: 0 auto 0 auto;
   border-radius: 2em;
   padding: 0 1em;
 }
-form{
+form {
   position: relative;
   bottom: 2.2em;
   margin-bottom: 1em;
-  .--carousel{
+  .--carousel {
     width: 90%;
     margin: 0 auto 0 auto;
-    .fieldset__div{
+    .fieldset__div {
       margin-bottom: 1em;
-      @include flex(column, center,center);
+      @include flex(column, center, center);
     }
-    .form__button{
+    .form__button {
       background-color: $select-color;
-      
     }
   }
 }
 
-.--opiniones{
-  select{
+.--opiniones {
+  select {
     border-style: none;
     background-color: $select-color;
     border-radius: 1em;
-    option{
+    option {
       background-color: $option-color;
     }
   }
 }
-.--comentarios{
+.--comentarios {
   textarea {
     color: $color-textarea;
     background-color: $bg-textarea-novedad;
@@ -170,8 +174,78 @@ form{
   }
 }
 
-
 //para el formulario de cuenta desactivo el boton
-.--botonDisabled{
+.--botonDisabled {
   display: none;
+}
+
+// mainContact-----------------------------------------
+
+//parrafo de bienvenida:
+.--Contacto {
+  grid-area: contacto;
+  @include style-mult-text;
+  p {
+    color: $texto-bienvenida;
+    margin: 2em;
+  }
+}
+//imagen de escudo:
+.--contenImage {
+  grid-area: imagen;
+  .--imagen {
+    width: 100%;
+  }
+}
+//formulario-horarios y fechas:
+.--contactoForm {
+  grid-area: form;
+  @include style-mult-text();
+}
+.section {
+  .ul {
+    height: 95%;
+    padding: 0;
+    margin: 1em;
+    @include grid(1fr 1fr, 1fr);
+  }
+}
+.--notStyleType li {
+  list-style-type: none;
+}
+.ul__li {
+  @include grid(1fr 4fr, 1fr);
+  grid-template-areas: "enlace" "ul";
+  .--enlaceFont {
+    grid-area: enlace;
+    display: block;
+    color: $color-barForm-text;
+  }
+  .--ul {
+    grid-area: ul;
+    //conveniencia
+    @include grid(1fr, 1fr);
+    padding: 0;
+    .--li {
+      margin-top: 2.2em;
+    }
+  }
+}
+.--formContact {
+  width: 100%;
+  height: 100%;
+  padding: 2%;
+  @include grid(1fr, 1fr);
+  background-color: #1c1a1d;
+  fieldset {
+    label {
+      font-weight: map-get($f-otros, medium);
+      color: #c8ff00;
+      width: 10%;
+    }
+    input {
+      font-weight: map-get($f-otros, medium);
+      background-color: #c8ff00;
+    }
+  }
 }
