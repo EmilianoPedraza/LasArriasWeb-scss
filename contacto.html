@@ -81,14 +81,14 @@
                     <a href="#" class="enlace --enlaceFont">Realizar consulta</a>
 
                     <ul class="--notStyleType --ul">
-                        <li class="--li">
+                        <li class="--liText">
                             <form class="--formContact --formConsulta">
-                                <fieldset>
-                                    <textarea name="consulta" id="consulta" cols="30" rows="2" minlength="80"
+                                <fieldset class="--boxOne">
+                                    <textarea name="consulta" id="consulta" cols="30" rows="4" minlength="80"
                                         maxlength="200" placeholder="Escribe cualquier duda que tengas aquí"
                                         class="consultaForm">
                                     </textarea>
-                                </fieldset>
+                                </fieldset class="--boxTwo">
                                 <button class="form__button">Enviar</button>
                             </form>
                         </li>
@@ -102,15 +102,15 @@
                     <ul class="--notStyleType --ul">
                         <li class="--li">
                             <form class="--formContact --formHorario">
-                                <fieldset>
+                                <fieldset class="--boxOne">
                                     <label for="fecha">Fecha</label>
                                     <input type="date" name="fecha" id="fecha">
                                 </fieldset>
-                                <fieldset>
+                                <fieldset class="--boxTwo">
                                     <label for="horario">Hora</label>
                                     <input type="time" name="horario" id="horario">
                                 </fieldset>
-                                <button class="form__button">Enviar</button>
+                                <button class="form__button --boxThree">Enviar</button>
                             </form>
                         </li>
                     </ul>
